@@ -43,10 +43,21 @@ for i in range(1, 4): # Perulangan baris (1-3)
 
 # Penggunaan break untuk keluar dari loop
 print("\n\033[4mBreak Statement\033[0m\n")
+
 for gos in range(1, 10):
     if gos == 5:
         print("Loop berhenti pada gos < ", gos)
         break # Menghentikan loop saat gos mencapai 5
     print(gos)
     
+#___________________________________________________________________________#
+
+# Penggunaan continue statement untuk melewati iterasi tertentu
+print("\n\033[4mContinue Statement\033[0m\n")
+
+for lis in range(1, 6):
+    if lis == 3:
+        continue  # Melewati angka 3
+    print(lis)
+
 #___________________________________________________________________________#
