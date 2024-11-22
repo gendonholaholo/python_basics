@@ -34,8 +34,8 @@ while angka != -1:
 # Mencetak tabel perkalian (nested loop)
 print("\n\033[4mNested Loop\033[0m\n")
 
-for i in range(1, 4): # Perulangan baris (1-3)
-    for j in range (1, 4): # Perulangan kolom (1-3)
+for i in range(1, 6): # Perulangan baris (1-5)
+    for j in range (1, 6): # Perulangan kolom (1-5)
        print(f"{i} x {j} = {i*j}", end="\t")
     print() # Berpindah baris saat satu baris selesai diproses
     
