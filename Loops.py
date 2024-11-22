@@ -69,3 +69,13 @@ for leo in range(1, 6):
     print(leo)
 else:
     print("Loop selesai tanpa terhenti dengan break")
+
+#___________________________________________________________________________#
+
+# Penggunaan for loop dengan enumerate
+# Enmurate di sini digunakan untuk menampilkan indeks
+print("\n\033[4mFor Loop Enumerate\033[0m\n")
+
+hewan = ["apel", "andri", "pisang", "jambu"]
+for index, hewan in enumerate(hewan):
+    print(f"Indeks {index}: {hewan}")
