@@ -1,0 +1,20 @@
+print("\033[4mExceptoin Handling\033[0m\n")
+
+print("\033[4mPenggunaan 1\033[0m")
+try:
+    # Block code yang berpotensi menimbulkan error
+    angka = int(input("Masukan angka: "))
+    print("Angka yang dimasukkan", angka)
+except ValueError:
+    # Jika terjadi error (ValueError), program akan menampilkan pesan berikut
+    print("Terjadi kesalahan! Harap masukkan angka yang valid.")
+
+print("\n\033[4mPenggunaan 2\033[0m")
+try:
+    x = int(input("Masukkan angka pertama: "))
+    y = int(input("Masukkan angka kedua: "))
+    hasil = x / y
+    print("Hasil pembagian:", hasil)
+except Exception as e:
+    raise e
+
