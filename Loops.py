@@ -1,39 +1,52 @@
 # Iterasi dari list (for loop)
-print("For Loop\n")
+print("\033[4mFor Loop\033[0m\n")
 
+print("\033[4mContoh 1\033[0m\n")
 buah = ["apel", "jeruk", "pisang", "mangga"]
 for buah in buah:
     print(buah) # Menampilkan setial elemen dalam list 'buah'
 
+print("\n\033[4mContoh 2\033[0m\n")
+
 for x in range(1, 5):
     print(x) # Menampilkan angka dari satu sampai 4
-
-print("__\n")
 
 #___________________________________________________________________________#
 
 # Penggunaan dalam kondisi tertentu (while loop)
-print("While Loop\n")
+print("\n\033[4mWhile Loop\033[0m\n")
 
+print("\033[4mContoh 1\033[0m")
 menghitung = 1
 while menghitung <= 5:
     print(menghitung) # Menampilkan dari 1-5
     menghitung += 1
+
+print("\n\033[4mContoh 2\033[0m")
 
 angka = 0
 while angka != -1:
     angka = int(input("Masukan angka (-1 untuk berhenti): "))
     print(f"Angka yang dimasukkan: {angka}")
 
-print("__\n")
-
 #___________________________________________________________________________#
 
 # Mencetak tabel perkalian (nested loop)
-print("Nested Loop\n")
+print("\n\033[4mNested Loop\033[0m\n")
 
 for i in range(1, 4): # Perulangan baris (1-3)
     for j in range (1, 4): # Perulangan kolom (1-3)
        print(f"{i} x {j} = {i*j}", end="\t")
     print() # Berpindah baris saat satu baris selesai diproses
     
+#___________________________________________________________________________#
+
+# Penggunaan break untuk keluar dari loop
+print("\n\033[4mBreak Statement\033[0m\n")
+for gos in range(1, 10):
+    if gos == 5:
+        print("Loop berhenti pada gos < ", gos)
+        break # Menghentikan loop saat gos mencapai 5
+    print(gos)
+    
+#___________________________________________________________________________#
