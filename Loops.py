@@ -61,3 +61,11 @@ for lis in range(1, 6):
     print(lis)
 
 #___________________________________________________________________________#
+
+# Penggunaan else dengan for loop
+print("\n\033[4mElse Loop\033[0m\n")
+
+for leo in range(1, 6):
+    print(leo)
+else:
+    print("Loop selesai tanpa terhenti dengan break")
