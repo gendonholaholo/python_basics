@@ -22,7 +22,7 @@ class namaPria():
 
 gos = namaPria("Gos", 26, "Gigolo")
 
-print(f"Nama saya adalah {gos.nama}, saya berumur {gos.umur} dan saya bekerja sebagai {gos.pekerjaan}.")
+# print(f"Nama saya adalah {gos.nama}, saya berumur {gos.umur} dan saya bekerja sebagai {gos.pekerjaan}.")
 # ------------------------------------------------------------ #
 
 
@@ -38,5 +38,13 @@ class namaAnak():
 
 leo = namaAnak("Leo", 7, "Nitendo")
 
-print(f"Namaku {leo.nama}, umurku {leo.umur}, aku suka sekali bermain {leo.hobi}.")
+# print(f"Namaku {leo.nama}, umurku {leo.umur}, aku suka sekali bermain {leo.hobi}.")
+# ------------------------------------------------------------ #
 
+
+# Memodifikasi nilai dari variable atribut di dalam object
+gos.nama = "Ghaws"
+leo.hobi = "PS"
+
+print(f"Nama saya adalah {gos.nama}, saya berumur {gos.umur} dan saya bekerja sebagai {gos.pekerjaan}.")
+print(f"Namaku {leo.nama}, umurku {leo.umur}, aku suka sekali bermain {leo.hobi}.")
