@@ -32,15 +32,10 @@ class NamaPria:
 
     @nama.setter
     def nama(self, value):
-        self._nama = value
-
-    @property
-    def umur(self):
-        return self._umur
-
-    @umur.setter
-    def umur(self, value):
-        self._umur = value
+        if len(value) <= 3:
+            print("Nama tidak valid. Harus lebih dari 3 huruf.")
+        else:
+            self._nama = value
 
 if __name__ == "__main__":
     wanita = NamaWanita("Elisa", 25)
